@@ -1,0 +1,268 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.logo-container h3 {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff; /* Text color */
+    font-weight: bold; 
+    margin-top: 5px; /* Add margin to the top for spacing */
+    font-family: 'Ephesis', sans-serif; /* Apply a custom font family */
+    letter-spacing: 2px; /* Add letter spacing for better readability */
+}
+
+
+/* Header */
+header {
+    
+    background-color: #740909;
+    padding: 60px 100px; /* Increased padding for a bigger header */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased box shadow for a more prominent effect */
+}
+
+.logo-container {
+    margin-left: 20px; /* Adjust as needed */
+    margin-top: 20px; /* Add margin to the top */
+    top: 0;
+    left: 0;
+    position: absolute;
+    flex: 1; /* Adjust according to your specific design needs */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-container img {
+    max-width: 150px; /* Adjust as needed */
+    mix-blend-mode: multiply;
+    width: auto; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Adjusted styles for the header text */
+.header-text {
+    flex-grow: 1; /* Allow the header text to take up remaining space */
+    text-align: center; /* Center the text within its container */
+}
+
+.header-text h1 {
+    margin: 0; /* Remove default margin */
+    color: #fff;
+    font-size: 45px; /* Increase font size */
+    font-weight: bold; /* Add bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Add letter spacing for better readability */
+    font-family: 'Eras Bold ITC', cursive; /* Apply custom font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for depth */
+}
+
+/* Menu */
+menu {
+    position: absolute;
+    bottom: 0;
+    left: 20px; /* Adjust this value to position it where you want */
+    padding: 10px; /* Padding for better spacing */
+    
+}
+
+menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+menu ul li {
+    margin-bottom: 5px; /* Adjust margin between menu items */
+    margin-left: 20px; /* Original margin */
+    margin-right: 20px; /* New margin for spacing between menu items */
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    width: 30px; /* Increased width of hamburger menu */
+    height: 4px; /* Increased height of hamburger menu */
+    background-color: #fff;
+    margin: 6px 0; /* Adjusted margin for better spacing */
+    transition: transform 0.3s ease;
+}
+
+.menu.active .hamburger:nth-child(1) {
+    transform: translateY(10px) rotate(45deg); /* Adjusted transform values for smoother animation */
+}
+
+.menu.active .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active .hamburger:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg); /* Adjusted transform values for smoother animation */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition for smoother color change */
+    padding: 10px 20px; /* Add padding for spacing */
+    border-radius: 100px; /* Add border radius for rounded corners */
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* Change text color on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color on hover */
+}
+
+nav ul li a.active {
+    background-color: #ff5733; /* Change background color for active state */
+}
+
+/* Main */
+main {
+    padding-top: 200px;
+}
+
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    color: #f00c0c;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Dreaming Outloud Pro', sans-serif;
+    position: fixed; /* Fixed position */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust vertically */
+    right: 0; /* Position on the right side */
+}
+
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #740909;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #8c1616;
+}
+
+.phone {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #c5b1b1;
+    color: #d60909;
+    padding: 35px 0;
+}
+
+.bottom-footer {
+    text-align: center;
+}

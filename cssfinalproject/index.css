@@ -1,0 +1,311 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f5f2f2;
+    color: #da1515;
+    display: block;
+    margin: 1px;
+}
+
+.logo-container h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+    font-family: 'Ephesis', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Header */
+header {
+    background-color: #740909;
+    padding: 60px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    margin-left: 20px;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-container img {
+    max-width: 150px;
+    mix-blend-mode: multiply;
+    width: auto;
+}
+
+/* Adjusted styles for the header text */
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Eras Bold ITC', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu */
+menu {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    padding: 10px;
+}
+
+menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+menu ul li {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+.menu.active .hamburger:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu.active .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.active .hamburger:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a.active {
+    background-color: #ff5733;
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.masthead {
+    text-align: center;
+    padding-top: 150px;
+    background-color: #f5eeee;
+    color: #333;
+}
+
+.masthead h1 {
+    font-family: cursive;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.masthead p {
+    font-family: 'Dreaming Outloud Pro', cursive, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.masthead .blue {
+    color: #007bff;
+}
+
+.shoe-container {
+    max-width: 400px;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #cf1c1c;
+}
+
+.shoe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.slider {
+    flex: 1;
+}
+
+.video-container1 {
+    position: relative;
+    width: 130px;
+    height: 700px;
+    background-color: rgb(20, 196, 20);
+}
+
+.nikevideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.shoe-container .shoe-card {
+    width: calc(100% - 20%);
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.cardspace-img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    mix-blend-mode: multiply;
+}
+
+.shoe-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.shoe-card h3 {
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.shoe-card p {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.slider-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #cf1c1c;
+    margin: 0px;
+    padding-top: 40px;
+    align-items: center;
+    z-index: 1000;
+    background-color: #740909;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+}
+
+.slieimagr {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+}
+
+/* Footer */
+footer {
+    padding-top: 350px;
+    width: 100%;
+    height: 40px;
+    background-color: #c5b1b1;
+    color: #d60909;
+    align-items: center;
+}
+
+.bottom-footer {
+    text-align: center;
+}
